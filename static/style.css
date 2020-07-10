@@ -1,0 +1,47 @@
+.products_scroll_container
+{
+    display: flex;
+    overflow-x: auto;
+    align-items: center;
+    flex: 2;
+}
+.products_grid_container
+{
+    display: grid;
+    overflow-x: scroll;
+}
+.produits
+{
+    display: flex;
+    float: left;
+    overflow: hidden;
+}
+.noms_produits
+{
+    float: right;
+    margin-top: 35%;
+    margin-right: 5%;
+    position: absolute;
+    right: 10px;
+    
+}
+.produit_name1
+{
+    display: inline-block;
+    margin-left: 30%;
+}
+a
+{
+    color: rgb(197, 145, 145);
+}
+.plus
+{
+    text-transform: 8px;
+    text-align: center;
+    width: 30%;
+    float: right;
+    margin-top: 37%;
+    margin-right: 5%;
+    position: absolute;
+    right: 10px;  
+}

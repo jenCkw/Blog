@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+  <h5 class="text-danger pl-5 ml-5 pt-3">categories 1</h5>
+  <div class="products_scroll_container">{% for produit in products %}
+    <div><img src="{{produit.cover.url}}" class="img_produits"><br/>
+      <p class="pl-5 ml-4 pt-4">{{produit.price}} $<br/>
+        <span class="pl-0 ml-0"><a href="{% url 'product-detail' produit.uuid %}">{{produit.name}}</a></span></p>
+      </div>
+  {% endfor %}</div></div>
+  <div class="container">
+   <h5 class="text-danger pl-5 ml-5 pt-3">categories 2</h5>
+   <div class="produits"><span class="products_grid_container">{% for produit in products %}
+          <h6 class="noms_produits">{{produit.name}}</h6>
+    </div>
+          <div class="plus"><a href="{% url 'product-detail' produit.uuid %}">plus de détails sur le produit </a><br/></div>
+  </div> 
+          <div><img src="{{produit.cover.url}}"><br/>
+    {% endfor %}</span>
+          </div>
+{% endblock content %}
